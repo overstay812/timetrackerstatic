@@ -57,6 +57,7 @@ body {
     display: block;
     width: 1296px;
     border-right: 1px solid #E9ECF2;
+    
 }
 .topButtons {
     display: flex;
@@ -65,7 +66,10 @@ body {
     margin-left: 96px;
 }
 .topButtons div {
-    margin-right: 131px;
+    margin-right: 95px;
+}
+.topButtons div :last-child {
+    background: none;
 }
 .topButtons button {
     padding: 16px 32px;
@@ -76,3 +80,42 @@ body {
 .calendarIcon {
     margin-left: 18px;
 }
+.dataAndFullTime {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 119px 0px 96px;
+    border-bottom: 1px solid #E9ECF2;
+    /* padding-left: 90px;  !!!!! */
+}
+.FullTimeProgress {
+display: inline-block;
+margin-right: 47px;
+}
+.FullTimeProgress span {
+    display: block;
+    font-size: 24px;
+    color: #BBBBBB;
+}
+.FullTimeProgress progress {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 6px;
+    margin-top: 8px;
+    background: #FFCC40;
+    border-radius: 10px;
+    padding: 0px;
+}
+.dowloadButton {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: none;
+
+
+}
+
