@@ -57,16 +57,19 @@ body {
     display: block;
     width: 1296px;
     border-right: 1px solid #E9ECF2;
+    margin-left: 72px;
+    padding-right: 84px;
+    
     
 }
 .topButtons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 96px;
+    margin-left: 24px;
 }
 .topButtons div {
-    margin-right: 95px;
+    margin-right: 35px;
 }
 .topButtons div :last-child {
     background: none;
@@ -84,9 +87,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 119px 0px 96px;
+    margin-top: 50px;
     border-bottom: 1px solid #E9ECF2;
-    /* padding-left: 90px;  !!!!! */
+    padding-bottom: 25px;
+    
+ 
+}
+.dayData {
+    margin-left: 24px;
 }
 .FullTimeProgress {
 display: inline-block;
@@ -96,16 +104,13 @@ margin-right: 47px;
     display: block;
     font-size: 24px;
     color: #BBBBBB;
+    
+
 }
-.FullTimeProgress progress {
-    display: inline-block;
-    position: relative;
+.FullTimeProgress meter {
     width: 100px;
-    height: 6px;
-    margin-top: 8px;
-    background: #FFCC40;
-    border-radius: 10px;
-    padding: 0px;
+    height: 8px;
+    
 }
 .dowloadButton {
     display: inline-block;
@@ -115,7 +120,81 @@ margin-right: 47px;
     width: 38px;
     border-radius: 50%;
     border: none;
+    margin-right: 35px;
+    background: #E9ECF2;
 
 
+}
+
+.issue {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px dashed #E9ECF2;
+    /* margin-left: 72px;
+    margin-right: 68px; */
+    align-items: center;
+    margin-top: 5px;
+    padding-bottom: 5px;
+
+}
+.issueInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 635px;
+    height: 76px;
+    border-left: 3.25px solid #E34040;
+    margin-left: 28px;
+    padding-left: 27px;
+}
+.issueInfo :first-child {
+    font-size: 18px;
+    color: #828282;
+}
+.issueInfo :last-child {
+    font-size: 20px;
+    
+}
+
+.issueTimeBegin {
+    margin-left: 24px;
+}
+.issueTimeFinish {
+    color: #BBBBBB
+}
+
+.issue progress {
+    display: flex;
+    width: 108px;
+    height: 7px;
+    
+}
+.issueSpendTime {
+    color: #BBBBBB;
+    margin-left: 50px;
+    font-size: 18px;
+}
+.issue button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin-left: 36px;
+    border: none;
+    border-radius: 50%;
+    background: #F0F3F5;
+}
+
+
+
+
+.TimeAndCalendarSection {
+    display: inline-block;
+    position: relative;
+    width: 624px;
+    height: 500px;
+    /* border: 1px solid red; */
 }
 
