@@ -5,6 +5,9 @@ body {
     height: 1080px;
     
 }
+.mainWrapper{
+    background: #F9FAFC;
+}
 
 /* header */
 
@@ -44,8 +47,32 @@ body {
 /* main */
 
 .main {
-    background: #F9FAFC;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 52px;
+    
+}
+.workSection {
+    display: block;
+    width: 1296px;
+    border-right: 1px solid #E9ECF2;
+}
+.topButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 96px;
+}
+.topButtons div {
+    margin-right: 131px;
+}
+.topButtons button {
+    padding: 16px 32px;
+    border: none;
+    background: #F0F3F5;
+    border-radius: 30px;
+}
+.calendarIcon {
+    margin-left: 18px;
 }
