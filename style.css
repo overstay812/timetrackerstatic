@@ -120,7 +120,7 @@ margin-right: 47px;
     width: 38px;
     border-radius: 50%;
     border: none;
-    margin-right: 35px;
+    margin-right: 50px;
     background: #E9ECF2;
 
 
@@ -142,32 +142,37 @@ margin-right: 47px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 635px;
+    width: 610px;
     height: 76px;
     border-left: 3.25px solid #E34040;
     margin-left: 28px;
     padding-left: 27px;
+}
+.borderColorGreen {
+    border-color: #62D2B1;
+}
+.borderColorYellow {
+    border-color: #FFCC40;
 }
 .issueInfo :first-child {
     font-size: 18px;
     color: #828282;
 }
 .issueInfo :last-child {
-    font-size: 20px;
-    
+    font-size: 20px;  
 }
 
 .issueTimeBegin {
     margin-left: 24px;
 }
 .issueTimeFinish {
-    color: #BBBBBB
+    color: #BBBBBB;
 }
 
-.issue progress {
+.issue meter {
     display: flex;
-    width: 108px;
-    height: 7px;
+    width: 117px;
+    height: 15px;
     
 }
 .issueSpendTime {
@@ -182,9 +187,29 @@ margin-right: 47px;
     width: 38px;
     height: 38px;
     margin-left: 36px;
+    /* margin-right: 45px; */
     border: none;
     border-radius: 50%;
     background: #F0F3F5;
+}
+.fullTimeBar{
+    display: flex;
+    flex-direction: row;
+    height:23px ;
+    background: #FFFFFF;
+    margin-top: 45px;
+    border-radius: 10px;
+}
+.fullTimeLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 14px;
+    
+}
+.fullTimeLine span {
+    color: #C4CACB;
+    font-size: 12px;
 }
 
 
