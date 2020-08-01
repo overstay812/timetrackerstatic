@@ -12,26 +12,27 @@
     <div class="mainWrapper">
         <header class="header">
             <nav class="navbar">
-                <a href="">Home</a>
-                <a href="" class="activeNav">Issues</a>
-                <a href="">Filter</a>
-                <a href="">Projects</a>
+                <a class="navbar-link" href="">Home</a>
+                <a class="navbar-link" href="" class="activeNav">Issues</a>
+                <a class="navbar-link" href="">Filter</a>
+                <a class="navbar-link" href="">Projects</a>
             </nav>
-            <div class="toolbar">
+            <nav class="toolbar">
                 <a href=""><img src="source/settings.svg" alt=""></a>
-                <a href=""><img src="source/info.svg" alt=""></a>
-                <a href=""><img src="source/exit.svg" alt=""></a>
-                <a href=""><img src="source/avatar.png" alt=""></a></div>
+                <a class="toolbar-link" href=""><img src="source/info.svg" alt=""></a>
+                <a class="toolbar-link" href=""><img src="source/exit.svg" alt=""></a>
+                <a class="toolbar-link" href=""><img src="source/avatar.png" alt=""></a>
+            </nav>
         </header>
 
         <main class="main">
             <section class="workSection">
 
                 <div class="topButtons">
-                    <button class="">10 JUNE 2020 <img class="calendarIcon" src="source/Vector.svg" alt=""></button>
-                    <div>
-                        <button class="">All</button>
-                        <button class="">Favorites</button>
+                    <button class="top-buttons-button">10 JUNE 2020 <img class="calendarIcon" src="source/Vector.svg" alt=""></button>
+                    <div class="top-buttons-wrapper">
+                        <button class="top-buttons-button">All</button>
+                        <button class="top-buttons-button btn-favorites">Favorites</button>
                     </div>
                 </div>
                 <section>
@@ -39,9 +40,9 @@
                         <span class="dayData"><strong>Wed</bold>, June 10</span>
                         <div class="FullTime">
                             <div class="FullTimeProgress">
-                                <span>06:05:00</span>
+                                <span class="FullTimeProgress-time">06:05:00</span>
                                 <!-- <progress max='100' value="20"></progress> -->
-                                <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="69">
+                                <meter class="FullTimeProgress-meter" min="0" max="100" low="30" high="70" optimum="80" value="69">
                                 </meter>
                             </div>
                             <button class="dowloadButton"><img src="source/direct-download 1.svg" alt=""></button>
@@ -52,54 +53,54 @@
                         <span class="issueTimeBegin">09:00&nbsp;</span>
                         <span class="issueTimeFinish"> - 10:00</span>
                         <div class="issueInfo">
-                            <span>JRM-310</span>
-                            <span>Team standup </span>
+                            <span class="issue-info-label">JRM-310</span>
+                            <span class="issue-info-title">Team standup </span>
                         </div>
-                        <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="0">
+                        <meter class="issue-meter" min="0" max="100" low="30" high="70" optimum="80" value="0">
                         </meter>
                         <span class="issueSpendTime">01:00:00</span>
-                        <button><img src="source/Polygon 1.svg" alt=""></button>
+                        <button class="issue-btn"><img src="source/Polygon 1.svg" alt=""></button>
                     </div>
 
                     <div class="issue">
                         <span class="issueTimeBegin">10:00&nbsp;</span>
                         <span class="issueTimeFinish">- 11:15</span>
                         <div class="issueInfo borderColorGreen">
-                            <span>JRM-310</span>
-                            <span>Meeting with QA</span>
+                            <span class="issue-info-label">JRM-310</span>
+                            <span class="issue-info-title">Meeting with QA</span>
                         </div>
-                        <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="100">
+                        <meter class="issue-meter" min="0" max="100" low="30" high="70" optimum="80" value="100">
                         </meter>
                         <span class="issueSpendTime">01:15:00</span>
-                        <button><img src="source/Polygon 1.svg" alt=""></button>
+                        <button class="issue-btn"><img src="source/Polygon 1.svg" alt=""></button>
                     </div>
 
                     <div class="issue">
                         <button class="issuePlayBtn">2</button>
                         <div class="issueInfo borderColorYellow issueInfoMarginRight">
-                            <span>JRM-310</span>
-                            <span>Company branding </span>
+                            <span class="issue-info-label">JRM-310</span>
+                            <span class="issue-info-title">Company branding </span>
                         </div>
-                        <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="50">
+                        <meter class="issue-meter" min="0" max="100" low="30" high="70" optimum="80" value="50">
                         </meter>
                         <span class="issueSpendTime">03:50:00</span>
-                        <button><img src="source/Polygon 1.svg" alt=""></button>
+                        <button class="issue-btn"><img src="source/Polygon 1.svg" alt=""></button>
                     </div>
                     <div class="fullTimeBar"></div>
                     <div class="fullTimeLine">
-                        <span>07:00</span>
-                        <span>08:00</span>
-                        <span>09:00</span>
-                        <span>10:00</span>
-                        <span>11:00</span>
-                        <span>12:00</span>
-                        <span>13:00</span>
-                        <span>14:00</span>
-                        <span>15:00</span>
-                        <span>16:00</span>
-                        <span>17:00</span>
-                        <span>18:00</span>
-                        <span>19:00</span>
+                        <span class="full-time-line-current">07:00</span>
+                        <span class="full-time-line-current">08:00</span>
+                        <span class="full-time-line-current">09:00</span>
+                        <span class="full-time-line-current">10:00</span>
+                        <span class="full-time-line-current">11:00</span>
+                        <span class="full-time-line-current">12:00</span>
+                        <span class="full-time-line-current">13:00</span>
+                        <span class="full-time-line-current">14:00</span>
+                        <span class="full-time-line-current">15:00</span>
+                        <span class="full-time-line-current">16:00</span>
+                        <span class="full-time-line-current">17:00</span>
+                        <span class="full-time-line-current">18:00</span>
+                        <span class="full-time-line-current">19:00</span>
                     </div>
                 </section>
 
@@ -108,9 +109,9 @@
                         <span class="dayData"><strong>Wed</bold>, June 10</span>
                         <div class="FullTime">
                             <div class="FullTimeProgress">
-                                <span>08:00:00</span>
+                                <span class="FullTimeProgress-time">08:00:00</span>
                                 <!-- <progress max='100' value="20"></progress> -->
-                                <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="100">
+                                <meter class="FullTimeProgress-meter" min="0" max="100" low="30" high="70" optimum="80" value="100">
                                 </meter>
                             </div>
                             <button class="dowloadButton"><img src="source/direct-download 1.svg" alt=""></button>
@@ -121,55 +122,55 @@
                         <span class="issueTimeBegin">09:00&nbsp;</span>
                         <span class="issueTimeFinish"> - 10:00</span>
                         <div class="issueInfo">
-                            <span>JRM-310</span>
-                            <span>Team standup </span>
+                            <span class="issue-info-label">JRM-310</span>
+                            <span class="issue-info-title">Team standup </span>
                         </div>
-                        <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="0">
+                        <meter class="issue-meter" min="0" max="100" low="30" high="70" optimum="80" value="0">
                         </meter>
                         <span class="issueSpendTime">03:15:00</span>
-                        <button><img src="source/Polygon 1.svg" alt=""></button>
+                        <button class="issue-btn"><img src="source/Polygon 1.svg" alt=""></button>
                     </div>
 
                     <div class="issue">
                         <span class="issueTimeBegin">10:00&nbsp;</span>
                         <span class="issueTimeFinish">- 11:15</span>
                         <div class="issueInfo borderColorGreen">
-                            <span>JRM-310</span>
-                            <span>Meeting with QA</span>
+                            <span class="issue-info-label">JRM-310</span>
+                            <span class="issue-info-title">Meeting with QA</span>
                         </div>
-                        <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="100">
+                        <meter class="issue-meter" min="0" max="100" low="30" high="70" optimum="80" value="100">
                         </meter>
                         <span class="issueSpendTime">01:15:00</span>
-                        <button><img src="source/Polygon 1.svg" alt=""></button>
+                        <button class="issue-btn"><img src="source/Polygon 1.svg" alt=""></button>
                     </div>
 
                     <div class="issue">
                         <span class="issueTimeBegin">09:00&nbsp;</span>
                         <span class="issueTimeFinish"> - 10:00</span>
                         <div class="issueInfo borderColorYellow">
-                            <span>JRM-310</span>
-                            <span>Company branding </span>
+                            <span class="issue-info-label">JRM-310</span>
+                            <span class="issue-info-title">Company branding </span>
                         </div>
-                        <meter id="fuel" min="0" max="100" low="30" high="70" optimum="80" value="50">
+                        <meter class="issue-meter" min="0" max="100" low="30" high="70" optimum="80" value="50">
                         </meter>
                         <span class="issueSpendTime">03:50:00</span>
-                        <button><img src="source/Polygon 1.svg" alt=""></button>
+                        <button class="issue-btn"><img src="source/Polygon 1.svg" alt=""></button>
                     </div>
                     <div class="fullTimeBar"></div>
                     <div class="fullTimeLine">
-                        <span>07:00</span>
-                        <span>08:00</span>
-                        <span>09:00</span>
-                        <span>10:00</span>
-                        <span>11:00</span>
-                        <span>12:00</span>
-                        <span>13:00</span>
-                        <span>14:00</span>
-                        <span>15:00</span>
-                        <span>16:00</span>
-                        <span>17:00</span>
-                        <span>18:00</span>
-                        <span>19:00</span>
+                        <span class="full-time-line-current">07:00</span>
+                        <span class="full-time-line-current">08:00</span>
+                        <span class="full-time-line-current">09:00</span>
+                        <span class="full-time-line-current">10:00</span>
+                        <span class="full-time-line-current">11:00</span>
+                        <span class="full-time-line-current">12:00</span>
+                        <span class="full-time-line-current">13:00</span>
+                        <span class="full-time-line-current">14:00</span>
+                        <span class="full-time-line-current">15:00</span>
+                        <span class="full-time-line-current">16:00</span>
+                        <span class="full-time-line-current">17:00</span>
+                        <span class="full-time-line-current">18:00</span>
+                        <span class="full-time-line-current">19:00</span>
                     </div>
                 </section>
             </section>
@@ -178,19 +179,19 @@
                 <div class="moreSection">
                     <span class="timeTracking">TimeTracking</span>
                     <button class="moreHorizontal"><img src="source/more-horizontal.svg" alt=""></button>
-                </div> 
+                </div>
                 <div class="newWorklogContainer">
                     <button class="createNewWorklog"><img src="source/plus.svg" alt=""></button>
                 </div>
 
                 <div class="GoogleCalendarContainer">
-                    <div>
+                    <div class="calendar-wrapper">
                         <span class="titleCalendar">Google calendar sync</span>
                         <button class="switchCalendar"><img src="./source/switch unactive.svg" alt=""></button>
                     </div>
                     <button class="GoogleCalendarIcon"><img src="./source/VectorGray.svg" alt=""></button>
                 </div>
-                
+
             </section>
         </main>
         <footer></footer>

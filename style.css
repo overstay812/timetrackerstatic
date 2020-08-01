@@ -24,7 +24,7 @@ body {
 .navbar {
     margin-left: 92px;
 }
-.navbar a {
+.navbar-link {
     
     padding:  34px 15px;
     color: #FFFFFF;
@@ -40,7 +40,7 @@ body {
     align-items: center;
     margin-right: 60px;
 }
-.toolbar a {
+.toolbar-link {
     margin-left: 47px;
 }
 
@@ -68,13 +68,13 @@ body {
     justify-content: space-between;
     margin-left: 24px;
 }
-.topButtons div {
+.top-buttons-wrapper {
     margin-right: 35px;
 }
-.topButtons div :last-child {
+.btn-favorites {
     background: none;
 }
-.topButtons button {
+.top-buttons-button {
     padding: 16px 32px;
     border: none;
     background: #F0F3F5;
@@ -100,14 +100,14 @@ body {
 display: inline-block;
 margin-right: 47px;
 }
-.FullTimeProgress span {
+.FullTimeProgress-time {
     display: block;
     font-size: 24px;
     color: #BBBBBB;
     
 
 }
-.FullTimeProgress meter {
+.FullTimeProgress-meter {
     width: 100px;
     height: 15px;
     
@@ -154,11 +154,11 @@ margin-right: 47px;
 .borderColorYellow {
     border-color: #FFCC40;
 }
-.issueInfo :first-child {
+.issue-info-label {
     font-size: 18px;
     color: #828282;
 }
-.issueInfo :last-child {
+.issue-info-title {
     font-size: 20px;  
 }
 
@@ -173,7 +173,7 @@ margin-right: 47px;
     color: #BBBBBB;
 }
 
-.issue meter {
+.issue-meter {
     display: flex;
     width: 117px;
     height: 15px;
@@ -184,7 +184,7 @@ margin-right: 47px;
     margin-left: 50px;
     font-size: 18px;
 }
-.issue button {
+.issue-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,13 +196,14 @@ margin-right: 47px;
     border-radius: 50%;
     background: #F0F3F5;
 }
+
 .issuePlayBtn {
     width: 38px;
     height: 38px;
     border: none;
     background: #FFFFFF;
     border-radius: 50px;
-    
+    margin-left: 36px;
 }
 .fullTimeBar{
     display: flex;
@@ -219,7 +220,7 @@ margin-right: 47px;
     margin-top: 14px;
     
 }
-.fullTimeLine span {
+.full-time-line-current {
     color: #C4CACB;
     font-size: 12px;
 }
@@ -273,7 +274,7 @@ margin-right: 47px;
     justify-content: space-between;
     align-items: center;
 }
-.GoogleCalendarContainer div {
+.calendar-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: start;
