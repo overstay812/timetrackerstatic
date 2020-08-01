@@ -5,7 +5,7 @@ body {
     height: 1080px;
     
 }
-.mainWrapper{
+.main-wrapper{
     background: #F9FAFC;
 }
 
@@ -32,7 +32,7 @@ body {
     margin-right: 45px;
     
 }
-.activeNav {
+.active-nav {
     border-bottom: 3px solid #FFFFFF;
 }
 .toolbar {
@@ -53,7 +53,7 @@ body {
     margin-top: 52px;
     
 }
-.workSection {
+.work-section {
     display: block;
     width: 1296px;
     border-right: 1px solid #E9ECF2;
@@ -62,7 +62,7 @@ body {
     
     
 }
-.topButtons {
+.top-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,13 +77,13 @@ body {
 .top-buttons-button {
     padding: 16px 32px;
     border: none;
-    background: #F0F3F5;
+    background: #d0d5d8;
     border-radius: 30px;
 }
-.calendarIcon {
+.calendar-icon {
     margin-left: 18px;
 }
-.dataAndFullTime {
+.data-and-fulltime {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,26 +93,26 @@ body {
     
  
 }
-.dayData {
+.day-data {
     margin-left: 24px;
 }
-.FullTimeProgress {
+.full-time-progress {
 display: inline-block;
 margin-right: 47px;
 }
-.FullTimeProgress-time {
+.full-time-progress-time {
     display: block;
     font-size: 24px;
     color: #BBBBBB;
     
 
 }
-.FullTimeProgress-meter {
+.full-time-progress-meter {
     width: 100px;
     height: 15px;
     
 }
-.dowloadButton {
+.dowload-button {
     display: inline-block;
     position: relative;
     vertical-align: top;
@@ -138,7 +138,7 @@ margin-right: 47px;
     padding-bottom: 5px;
 
 }
-.issueInfo {
+.issue-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,10 +148,10 @@ margin-right: 47px;
     margin-left: 28px;
     padding-left: 27px;
 }
-.borderColorGreen {
+.border-color-green {
     border-color: #62D2B1;
 }
-.borderColorYellow {
+.border-color-yellow {
     border-color: #FFCC40;
 }
 .issue-info-label {
@@ -162,14 +162,13 @@ margin-right: 47px;
     font-size: 20px;  
 }
 
-
-.issueInfoMarginRight {
+.issue-info-margin-right {
     margin-left: 66px;
 }
-.issueTimeBegin {
+.issue-time-begin {
     margin-left: 24px;
 }
-.issueTimeFinish {
+.issue-time-finish {
     color: #BBBBBB;
 }
 
@@ -179,7 +178,7 @@ margin-right: 47px;
     height: 15px;
     
 }
-.issueSpendTime {
+.issue-spend-time {
     color: #BBBBBB;
     margin-left: 50px;
     font-size: 18px;
@@ -197,7 +196,7 @@ margin-right: 47px;
     background: #F0F3F5;
 }
 
-.issuePlayBtn {
+.issue-play-btn {
     width: 38px;
     height: 38px;
     border: none;
@@ -205,7 +204,7 @@ margin-right: 47px;
     border-radius: 50px;
     margin-left: 36px;
 }
-.fullTimeBar{
+.full-timebar{
     display: flex;
     flex-direction: row;
     height:23px ;
@@ -213,7 +212,7 @@ margin-right: 47px;
     margin-top: 45px;
     border-radius: 10px;
 }
-.fullTimeLine{
+.full-time-line{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -225,33 +224,30 @@ margin-right: 47px;
     font-size: 12px;
 }
 
-
-
-
-.timeAndCalendarSection {
+.time-and-calendar-section {
     display: inline-block;
     position: relative;
     width: 624px;
     height: 500px;
     /* border: 1px solid red; */
 }
-.moreSection {
+.more-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.timeTracking {
+.time-tracking {
     margin-left: 38px;
     font-size: 24px;
 }
-.moreHorizontal {
+.more-horizontal {
     background: none;
     border: none;
     padding: 0px;
     margin-right: 63px;
     
 }
-.newWorklogContainer {
+.new-worklog-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -259,7 +255,7 @@ margin-right: 47px;
     height: 363px;
     border-bottom: 1px solid #E9ECF2;
 }
-.createNewWorklog {
+.create-new-worklog {
     width: 66px;
     height: 66px;
     background: #FFFFFF;
@@ -267,7 +263,7 @@ margin-right: 47px;
     border: none;
     box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
 }
-.GoogleCalendarContainer {
+.google-calendar-container {
     margin-top: 31px;
     display: flex;
     flex-direction: row;
@@ -280,17 +276,17 @@ margin-right: 47px;
     justify-content: start;
     align-items: center;
 }
-.titleCalendar {
+.title-calendar {
     margin-left: 38px;
     font-size: 24px;
     margin-right: 25px;
 }
-.switchCalendar {
+.switch-calendar {
     background: none;
     border: none;
 
 } 
-.GoogleCalendarIcon {
+.google-calendar-icon {
 margin-right: 63px;
 background: none;
 border: none;
