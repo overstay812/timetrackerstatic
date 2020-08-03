@@ -291,4 +291,21 @@ margin-right: 63px;
 background: none;
 border: none;
 }
-
+.popup-calendar {
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 138px;
+    background: #FFFFFF;
+}
+.popup-calendar-wrapper{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;    
+}
+.popup-calendar-statusbar {
+    width: 12px;
+    height: 12px;
+    background: #FFCC40;
+    border-radius: 50%;
+}
