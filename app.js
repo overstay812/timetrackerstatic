@@ -24,26 +24,97 @@ switchCalendar.addEventListener('click', openCardList)
 // start dedicate issue
 const issueWrapper = document.querySelectorAll('.issue-wrapper')
 
+
 issueWrapper.forEach(item => {
     item.addEventListener('click', event => {
-        console.log(event.currentTarget);
 
         let menuButtonIssue = document.createElement('div')
+        menuButtonIssue.style.display = "flex"
+        menuButtonIssue.style.flexDirection = "row"
+        menuButtonIssue.style.justifyContent = "center"
+        menuButtonIssue.style.alignItems = 'center'
         menuButtonIssue.style.width = 58 + 'px'
         menuButtonIssue.style.height = 86 + 'px'
         menuButtonIssue.style.background = '#3744BD'
         menuButtonIssue.style.position = 'absolute'
         menuButtonIssue.style.zIndex = 1
-
         menuButtonIssue.style.right = -32 + 'px'
         menuButtonIssue.style.borderRadius = 10 + 'px'
-
+        menuButtonIssue.classList = 'issue-wrapper_menu-btn'
         event.currentTarget.appendChild(menuButtonIssue)
+
+        event.currentTarget.style.boxShadow = `0px 15px 30px rgba(216, 226, 232, 0.12)`
+
+        // create image inside 
+        let issueMenuBtnImg = document.createElement('img')
+        issueMenuBtnImg.src = "source/more-vertical.svg"
+        issueMenuBtnImg.style.marginLeft = 20 + 'px'
+        menuButtonIssue.appendChild(issueMenuBtnImg)
+
+        // create dropdown menu
+        menuButtonIssue.addEventListener('click', () => {
+            const dropdownMenu = document.createElement('div')
+            dropdownMenu.style.display = 'flex'
+            dropdownMenu.style.flexDirection = 'column'
+            dropdownMenu.style.justifyContent = 'center'
+            dropdownMenu.style.alignItems = 'flex-start'
+            dropdownMenu.style.position = 'absolute'
+            dropdownMenu.style.marginTop = 93 + 'px'
+            dropdownMenu.style.right = -32 + 'px'
+            dropdownMenu.style.background = '#FFFFFF'
+            dropdownMenu.style.paddingTop = 5 + 'px'
+            dropdownMenu.style.paddingRight = 32 + 'px'
+            dropdownMenu.style.paddingBottom = 23 + 'px'
+            dropdownMenu.style.paddingLeft = 32 + 'px'
+            dropdownMenu.style.borderRadius = 10 + 'px'
+            dropdownMenu.style.boxShadow = `0px 15px 30px rgba(216, 226, 232, 0.12)`
+            dropdownMenu.style.zIndex = 9999
+
+            item.appendChild(dropdownMenu)
+            
+
+
+
+            // create links inside this menu
+            const jiraLink = document.createElement('a')
+            jiraLink.classList = 'issue_dropdownMenu_link'
+            jiraLink.innerText = 'JIRA'
+            jiraLink.href = ''
+            dropdownMenu.appendChild(jiraLink)
+
+            const duplicateaLink = document.createElement('a')
+            duplicateaLink.classList = 'issue_dropdownMenu_link'
+            duplicateaLink.innerText = 'Duplicate'
+            duplicateaLink.href =''
+            dropdownMenu.appendChild(duplicateaLink)
+            
+            const addToFavoriteLink = document.createElement('a')
+            addToFavoriteLink.classList = 'issue_dropdownMenu_link'
+            addToFavoriteLink.innerText = 'Add to favorite'
+            addToFavoriteLink.href=''
+            dropdownMenu.appendChild(addToFavoriteLink)
+
+            const deleteLink = document.createElement('a')
+            deleteLink.classList = 'issue_dropdownMenu_link'
+            deleteLink.innerText = 'Delete'
+            dropdownMenu.appendChild(deleteLink)
+            deleteLink.href =''
+            
+            const linksCollection = document.querySelectorAll('.issue_dropdownMenu_link')
+            linksCollection.forEach(item => {
+                item.style.fontSize = 16 + 'px'
+                item.style.marginTop = 18 + 'px'
+                item.style.color = '#4F4F4F'
+                item.style.textDecoration = 'none'
+            })
+        }
+        )
+
     }
     )
 }
 )
- 
+
 const issueDedicated = document.querySelectorAll('.issue')
 issueDedicated.forEach(item => {
     item.addEventListener('click', (event) => {
@@ -57,3 +128,7 @@ issueDedicated.forEach(item => {
 }
 )
 // end dedicate issue
+
+// start current issue  dropdown menu`
+
+
