@@ -149,6 +149,10 @@ position: relative;
     padding-left: 0px;
     
 }
+.nested-issue {
+    display: none;
+    
+}
 
 
 .issue-info {
@@ -216,6 +220,8 @@ position: relative;
     background: #FFFFFF;
     border-radius: 50px;
     margin-left: 36px;
+    color: #4f4f4f;
+    box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
 }
 .full-timebar{
     display: flex;
@@ -259,6 +265,27 @@ position: relative;
     padding: 0px;
     margin-right: 63px;
     
+}
+.more-horizontal_dropdown-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    background: #FFFFFF;
+    padding: 5px 32px 23px 32px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+    z-index: 9999;
+    right: 67px;
+    top: 22px;
+}
+
+.more-horizontal_dropdown-menu_link {
+    font-size: 16px;
+    margin-top: 18px;
+    color: #4F4F4F;
+    text-decoration: none;
 }
 .new-worklog-container {
     display: flex;

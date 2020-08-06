@@ -28,6 +28,7 @@ const issueWrapper = document.querySelectorAll('.issue-wrapper')
 issueWrapper.forEach(item => {
     item.addEventListener('click', event => {
 
+
         let menuButtonIssue = document.createElement('div')
         menuButtonIssue.style.display = "flex"
         menuButtonIssue.style.flexDirection = "row"
@@ -71,7 +72,7 @@ issueWrapper.forEach(item => {
             dropdownMenu.style.zIndex = 9999
 
             item.appendChild(dropdownMenu)
-            
+
 
 
 
@@ -85,21 +86,21 @@ issueWrapper.forEach(item => {
             const duplicateaLink = document.createElement('a')
             duplicateaLink.classList = 'issue_dropdownMenu_link'
             duplicateaLink.innerText = 'Duplicate'
-            duplicateaLink.href =''
+            duplicateaLink.href = ''
             dropdownMenu.appendChild(duplicateaLink)
-            
+
             const addToFavoriteLink = document.createElement('a')
             addToFavoriteLink.classList = 'issue_dropdownMenu_link'
             addToFavoriteLink.innerText = 'Add to favorite'
-            addToFavoriteLink.href=''
+            addToFavoriteLink.href = ''
             dropdownMenu.appendChild(addToFavoriteLink)
 
             const deleteLink = document.createElement('a')
             deleteLink.classList = 'issue_dropdownMenu_link'
             deleteLink.innerText = 'Delete'
             dropdownMenu.appendChild(deleteLink)
-            deleteLink.href =''
-            
+            deleteLink.href = ''
+
             const linksCollection = document.querySelectorAll('.issue_dropdownMenu_link')
             linksCollection.forEach(item => {
                 item.style.fontSize = 16 + 'px'
@@ -112,6 +113,7 @@ issueWrapper.forEach(item => {
 
     }
     )
+
 }
 )
 
@@ -119,7 +121,6 @@ const issueDedicated = document.querySelectorAll('.issue')
 issueDedicated.forEach(item => {
     item.addEventListener('click', (event) => {
         const currentItem = event.currentTarget;
-
         currentItem.style.background = "#FFFFFF"
         currentItem.style.borderRadius = 10 + 'px'
 
@@ -127,8 +128,49 @@ issueDedicated.forEach(item => {
     )
 }
 )
+
 // end dedicate issue
 
 // start current issue  dropdown menu`
 
+// start opening nested issue
+const issuePlayBtn = document.querySelector('.issue-play-btn')
+const nestedIssueCollection = document.querySelectorAll('.nested-issue')
 
+issuePlayBtn.addEventListener('click', (event) => {
+
+    nestedIssueCollection.forEach(item => {
+        event.stopPropagation()
+        if (item.style.display === 'none') {
+            item.style.display = 'flex'
+            issuePlayBtn.innerHTML = '^'
+
+        } else {
+            item.style.display = 'none'
+            issuePlayBtn.innerHTML = '2'
+        }
+
+        item.firstElementChild.style.background = '#FCFDFE'
+        item.firstElementChild.style.borderRadius = 10 + 'px'
+
+    })
+
+}
+)
+// end opening nested issue
+
+// start time tracking: dropdown menu
+
+const timeTrackerDropdownMenuBtn = document.querySelector('.more-horizontal')
+
+timeTrackerDropdownMenuBtn.addEventListener('click', () => {
+    const timeTrackerDropdownMenu = document.querySelector('.more-horizontal_dropdown-menu')
+    console.dir( timeTrackerDropdownMenu.style.display);
+    if (timeTrackerDropdownMenu.style.display === 'none') {
+        timeTrackerDropdownMenu.style.display = 'flex'
+    } else {
+        timeTrackerDropdownMenu.style.display = 'none'
+    }
+}
+)
+// end time tracking: dropdown menu
