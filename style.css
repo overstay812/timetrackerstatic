@@ -63,14 +63,123 @@ button {
     border-right: 1px solid #E9ECF2;
     margin-left: 72px;
     padding-right: 84px;
-    
-    
 }
 .top-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 24px;
+}
+.top-buttons_calendar {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 7px 30px rgba(148, 156, 160, 0.08);
+    z-index: 9999;
+    top:196px;
+    left: 97px;
+    max-height: 472px;
+}
+.top-buttons_calendar_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 62px 0px 62px;
+    
+}
+.calendar_column_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 334px;
+}
+.calendar_current-month {
+    color: #000000
+}
+.top-buttons_calendar_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.calendar_common-style {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    
+}
+.calendar-weekdays {
+    color: #999999;
+}
+.calendar-gray {
+    color: #CCCCCC
+} 
+.calendar-statusbar {
+    height: 6px;
+    width: 20px;
+    
+    border-radius: 3px;
+    margin-top: 2px;
+}
+.statusbar-green {
+    background: #62D2B1;
+    
+}
+.statusbar-opacity{
+    opacity: 0.4;
+}
+
+.statusbar-yellow{
+background:  #FFCC40;
+}
+.statusbar-red {
+    background:  #E34040;
+    
+}
+.calendar-discription {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 61px;
+    margin-bottom: 35px;
+}
+.calendar-discription_common {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.calendar-common-style {
+    width: 20px;
+    height: 6px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.calendar-discription-green {
+    background: #62D2B1;
+}
+.calendar-discription-yellow {
+    background: #FFCC40;
+}
+.calendar-discription-red {
+    background: #E34040;
+}
+.calendar-discription-name {
+    font-size: 11px;
+    color: #898989;
+
 }
 .top-buttons-wrapper {
     margin-right: 35px;

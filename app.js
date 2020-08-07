@@ -160,12 +160,10 @@ issuePlayBtn.addEventListener('click', (event) => {
 // end opening nested issue
 
 // start time tracking: dropdown menu
-
 const timeTrackerDropdownMenuBtn = document.querySelector('.more-horizontal')
 
 timeTrackerDropdownMenuBtn.addEventListener('click', () => {
     const timeTrackerDropdownMenu = document.querySelector('.more-horizontal_dropdown-menu')
-    console.dir( timeTrackerDropdownMenu.style.display);
     if (timeTrackerDropdownMenu.style.display === 'none') {
         timeTrackerDropdownMenu.style.display = 'flex'
     } else {
@@ -174,3 +172,29 @@ timeTrackerDropdownMenuBtn.addEventListener('click', () => {
 }
 )
 // end time tracking: dropdown menu
+
+// start top calendar top button
+ const calendarTopBtn = document.querySelector('.top-buttons-button')
+ calendarTopBtn.addEventListener('click' , ( ) => {
+     const calendar = document.querySelector('.top-buttons_calendar')
+     if (calendar.style.display === 'none') {
+        calendar.style.display = 'flex'
+     } else {
+        calendar.style.display = 'none'
+     }
+ }
+ )
+// end top calendar top button
+
+// start dedicate calendar day
+const calendarDayColl = document.querySelectorAll('.calendar-count')
+calendarDayColl.forEach(item => {
+    item.addEventListener('click', (event) => {
+        event.currentTarget.style.background = '#3744BD'
+        event.currentTarget.style.borderRadius = 50 + '%'
+        event.currentTarget.style.color="white"
+
+    }
+    )
+})
+// end dedicate calendar day
