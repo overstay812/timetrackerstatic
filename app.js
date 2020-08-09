@@ -174,16 +174,16 @@ timeTrackerDropdownMenuBtn.addEventListener('click', () => {
 // end time tracking: dropdown menu
 
 // start top calendar top button
- const calendarTopBtn = document.querySelector('.top-buttons-button')
- calendarTopBtn.addEventListener('click' , ( ) => {
-     const calendar = document.querySelector('.top-buttons_calendar')
-     if (calendar.style.display === 'none') {
+const calendarTopBtn = document.querySelector('.top-buttons-button')
+calendarTopBtn.addEventListener('click', () => {
+    const calendar = document.querySelector('.top-buttons_calendar')
+    if (calendar.style.display === 'none') {
         calendar.style.display = 'flex'
-     } else {
+    } else {
         calendar.style.display = 'none'
-     }
- }
- )
+    }
+}
+)
 // end top calendar top button
 
 // start dedicate calendar day
@@ -192,9 +192,42 @@ calendarDayColl.forEach(item => {
     item.addEventListener('click', (event) => {
         event.currentTarget.style.background = '#3744BD'
         event.currentTarget.style.borderRadius = 50 + '%'
-        event.currentTarget.style.color="white"
+        event.currentTarget.style.color = "white"
 
     }
     )
 })
 // end dedicate calendar day
+
+// start tracking current issue
+const issue = document.querySelectorAll('.issue')
+
+issue.forEach(item => {
+    item.addEventListener('click', (event) => {
+        // show worklog
+        const newWorklogWrapper = document.querySelector('.new-worklog-wrapper')
+        newWorklogWrapper.style.display = 'flex'
+        const createNewWorklogWrapper = document.querySelector('.create-new-worklog-wrapper')
+        createNewWorklogWrapper.style.display = 'none'
+
+        // get worklog info  
+        const issueInfoTitle = event.currentTarget.querySelector('.issue-info-title')
+        const currentTitleInnerText = issueInfoTitle.innerText
+
+        // set worklog title
+        const worklogTitle = document.querySelector('.new-worklog_title')
+        worklogTitle.innerText = currentTitleInnerText
+
+        // get worklog time
+        const issueSpendTime = event.currentTarget.querySelector('.issue-spend-time')
+        const issueSpendTimeInnerText = issueSpendTime.innerText
+
+        // set worklog time 
+        const newWorklogTime = document.querySelector('.new-worklog_time')
+        newWorklogTime.innerText = issueSpendTimeInnerText
+    }
+    )
+
+})
+
+// end tracking current issue

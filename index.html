@@ -439,7 +439,21 @@
                         </div>
                     </div>
                     <div class="new-worklog-container">
-                        <button class="create-new-worklog"><img src="source/plus.svg" alt=""></button>
+                        <div class="create-new-worklog-wrapper">
+                            <button class="create-new-worklog"><img src="source/plus.svg" alt=""></button>
+                            <span class="create-new-worklog_title">new worklog</span>
+                        </div>
+                        <div class="new-worklog-wrapper">
+                            <!-- info add in js -->
+                            <span class="new-worklog_title"></span>
+                            <button class="new-worklog_add-issue"></button>
+                            <span class="new-worklog_time">01:15:00</span>
+                            <div class="new-worklog-btn_wrapper">
+                                <button class="new-worklog-btn-stop"><img src="source/stop.svg" alt=""></button>
+                                <button class="new-worklog-btn-pause"><img src="source/pause.svg" alt=""></button>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="google-calendar-container">
@@ -483,10 +497,37 @@
                         <p class="popup-calendar-info-nothing">Noting to log. Please check issues assigment or
                             description.</p>
                     </div>
-                    <!-- pop-up end -->
+                    <!-- pop-up end -->￼￼
                 </div>
 
             </section>
+
+            <!-- start pop-up create new worklog  -->
+            <div class="popup-worklog-wrapper">
+                <div class="popup-worklog">
+                    <div class="popup-worklog_header">
+                        <span>New worklog</span>
+                    </div>
+                    <div class="popup-worklog_main">
+
+                        <div>
+                            <label for="">Worklog name</label>
+                            <input type="text" id="" placeholder="Enter the worklog name">
+                        </div>
+
+                        <div>
+                            <label for="">Issue</label>
+                            <input type="text" id="" placeholder="Enter the issue name ">
+                        </div>
+
+                    </div>
+                    <div class="popup-worklog_footer">
+                        <button><img src="" alt=""></button>
+                        <button><img src="" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- start pop-up create new worklog  -->
         </main>
         <footer></footer>
         <script src="./app.js"></script>
