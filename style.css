@@ -2,13 +2,14 @@ body {
   max-width: 0px auto;
   margin: 0px auto;
   width: 1920px;
-  height: 1080px;
+  
 }
 button {
   outline: none;
 }
 .main-wrapper {
   background: #f9fafc;
+  
 }
 
 /* header */
@@ -17,7 +18,7 @@ button {
   display: flex;
   flex-direction: row;
   background: #3744bd;
-  height: 91px;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
 }
@@ -49,6 +50,8 @@ button {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 52px;
+  height: 990px;
+  
 }
 .work-section {
   display: block;
@@ -172,13 +175,22 @@ button {
 .top-buttons-wrapper {
   margin-right: 35px;
 }
-.btn-favorites {
-  background: none;
-}
-.top-buttons-button {
+.top-buttons_data {
   padding: 16px 32px;
   border: none;
   background: #d0d5d8;
+  border-radius: 30px;
+}
+.top-buttons-all {
+  padding: 16px 32px;
+  border: none;
+  background: #d0d5d8;
+  border-radius: 30px;
+}
+.top-buttons-favorites {
+  padding: 16px 32px;
+  border: none;
+  background: #f9fafc;
   border-radius: 30px;
 }
 .calendar-icon {
@@ -194,6 +206,43 @@ button {
 }
 .day-data {
   margin-left: 24px;
+}
+
+.favorit-issue-section {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.favorit-issue_title {
+  margin-top: 50px;
+  color: #1e1e1e;
+  font-size: 24px;
+}
+.favorit-issue_add-btn {
+  width: 66px;
+  height: 66px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+  margin-top: 60px;
+}
+.favorit-issue_btn-title {
+  margin-top: 22px;
+  color: #C4CACB;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.favorit-issue_btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.issueSection {
+  display: flex;
+  flex-direction: column;
 }
 .full-time-progress {
   display: inline-block;
@@ -554,7 +603,7 @@ button {
 }
 
 .popup-worklog-wrapper {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -586,17 +635,15 @@ button {
   background: #f8f8f8;
   box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
   border-radius: 10px 10px 0px 0px;
-
 }
 .popup-worklog_header_title {
   margin-left: 56px;
-  color: #1E1E1E;
+  color: #1e1e1e;
   font-size: 18px;
 }
 .popup-worklog_main {
   /* border: 1px solid red; */
   width: 545px;
- 
 }
 .popup-worklog-range {
   margin-top: 49px;
@@ -608,7 +655,6 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 73px;
-  
 }
 .popup-worklog_info {
   display: flex;
@@ -616,62 +662,61 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 22px;
-  
 }
 .popup-worklog_name_label {
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-size: 10px;
 }
 .popup-worklog_name_input {
-   margin-top: 6px;
-   border: none;
-   border-bottom: 1px solid #E9ECF2;
-   width: 100%;
-   color: #C4CACB;
-   font-size: 12px;
-   padding-bottom: 14px;
+  margin-top: 6px;
+  border: none;
+  border-bottom: 1px solid #e9ecf2;
+  width: 100%;
+  color: #c4cacb;
+  font-size: 12px;
+  padding-bottom: 14px;
 }
 .popup-worklog_name_label {
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-size: 10px;
 }
 .popup-worklog_name_input {
-   margin-top: 6px;
-   border: none;
-   border-bottom: 1px solid #E9ECF2;
-   width: 100%;
-   color: #C4CACB;
-   font-size: 12px;
-   padding-bottom: 14px;
-   outline: none;
+  margin-top: 6px;
+  border: none;
+  border-bottom: 1px solid #e9ecf2;
+  width: 100%;
+  color: #c4cacb;
+  font-size: 12px;
+  padding-bottom: 14px;
+  outline: none;
 }
 .popup-worklog_info_label {
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-size: 10px;
 }
 .popup-worklog_info_input {
-   margin-top: 6px;
-   border: none;
-   border-bottom: 1px solid #E9ECF2;
-   width: 100%;
-   color: #C4CACB;
-   font-size: 12px;
-   padding-bottom: 14px;
-   outline: none;
-   
+  margin-top: 6px;
+  border: none;
+  border-bottom: 1px solid #e9ecf2;
+  width: 100%;
+  color: #c4cacb;
+  font-size: 12px;
+  padding-bottom: 14px;
+  outline: none;
 }
 .popup-worklog_apply {
   width: 45px;
   height: 45px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
   border: none;
-  border-radius: 50%; margin-right: 27px;
+  border-radius: 50%;
+  margin-right: 27px;
 }
 .popup-worklog_cancel {
   width: 45px;
   height: 45px;
-  background: #F9FAFC;
+  background: #f9fafc;
   border: none;
   border-radius: 50%;
 }

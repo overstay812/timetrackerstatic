@@ -29,7 +29,7 @@
             <section class="work-section">
 
                 <div class="top-buttons">
-                    <button class="top-buttons-button">10 JUNE 2020 <img class="calendar-icon" src="source/Vector.svg"
+                    <button class="top-buttons_data">10 JUNE 2020 <img class="calendar-icon" src="source/Vector.svg"
                             alt=""></button>
 
                     <!-- start calendar display: none -->
@@ -235,17 +235,27 @@
                     <!-- end calendar display: none -->
 
                     <div class="top-buttons-wrapper">
-                        <button class="top-buttons-button">All</button>
-                        <button class="top-buttons-button btn-favorites">Favorites</button>
+                        <button class="top-buttons-all">All</button>
+                        <button class="top-buttons-favorites">Favorites</button>
                     </div>
                 </div>
+
+                <!-- start favorit-issue-section display none default -->
+                <section class="favorit-issue-section">
+                    <span class="favorit-issue_title">There is no favorite issues yet</span>
+                    <div class="favorit-issue_btn-wrapper">
+                        <button class="favorit-issue_add-btn"> <img src="source/plus.svg" alt=""></button>
+                        <span class="favorit-issue_btn-title">new favorite</span>
+                    </div>
+                </section>
+                <!-- end favorit-issue-section display none default -->
+
                 <section class='issueSection'>
                     <div class="data-and-fulltime">
                         <span class="day-data"><strong>Wed</bold>, June 10</span>
                         <div>
                             <div class="full-time-progress">
                                 <span class="full-time-progress-time">06:05:00</span>
-                                <!-- <progress max='100' value="20"></progress> -->
                                 <meter class="full-time-progress-meter" min="0" max="100" low="30" high="70"
                                     optimum="80" value="69">
                                 </meter>
@@ -346,7 +356,7 @@
                     </div>
                 </section>
 
-                <section>
+                <section class='issueSection'>
                     <div class="data-and-fulltime">
                         <span class="day-data"><strong>Tue</bold>, June 09</span>
                         <div>
@@ -488,19 +498,23 @@
                         </div>
                     </div>
 
-                    <!-- pop-up start -->
-                    <div class="popup-calendar">
-                        <div class="popup-calendar-wrapper">
-                            <div class="popup-calendar-statusbar"></div>
-                            <button class="popup-calendar-btn-close"><img src="./source/x.svg" alt=""></button>
-                        </div>
-                        <p class="popup-calendar-info-nothing">Noting to log. Please check issues assigment or
-                            description.</p>
-                    </div>
-                    <!-- pop-up end -->￼￼
                 </div>
 
+
             </section>
+
+
+
+            <!-- pop-up start -->
+            <div class="popup-calendar">
+                <div class="popup-calendar-wrapper">
+                    <div class="popup-calendar-statusbar"></div>
+                    <button class="popup-calendar-btn-close"><img src="./source/x.svg" alt=""></button>
+                </div>
+                <p class="popup-calendar-info-nothing">Noting to log. Please check issues assigment or
+                    description.</p>
+            </div>
+            <!-- pop-up end -->￼￼
 
             <!-- start pop-up create new worklog  -->
             <div class="popup-worklog-wrapper">
@@ -510,16 +524,18 @@
                     </div>
                     <div class="popup-worklog_main">
 
-                         <input class="popup-worklog-range" type="range">
+                        <input class="popup-worklog-range" type="range">
 
                         <div class="popup-worklog_name">
                             <label class="popup-worklog_name_label" for="wrk-input-name">Worklog name</label>
-                            <input type="text" id="wrk-input-name" class="popup-worklog_name_input" placeholder="Enter the worklog name">
+                            <input type="text" id="wrk-input-name" class="popup-worklog_name_input"
+                                placeholder="Enter the worklog name">
                         </div>
 
                         <div class="popup-worklog_info">
                             <label class="popup-worklog_info_label" for="wrk-input-info">Issue</label>
-                            <input type="text" id="wrk-input-info"  class="popup-worklog_info_input"placeholder="Enter the issue name ">
+                            <input type="text" id="wrk-input-info" class="popup-worklog_info_input"
+                                placeholder="Enter the issue name ">
                         </div>
 
                     </div>

@@ -174,7 +174,7 @@ timeTrackerDropdownMenuBtn.addEventListener('click', () => {
 // end time tracking: dropdown menu
 
 // start top calendar top button
-const calendarTopBtn = document.querySelector('.top-buttons-button')
+const calendarTopBtn = document.querySelector('.top-buttons_data')
 calendarTopBtn.addEventListener('click', () => {
     const calendar = document.querySelector('.top-buttons_calendar')
     if (calendar.style.display === 'none') {
@@ -231,3 +231,64 @@ issue.forEach(item => {
 })
 
 // end tracking current issue
+
+// start open popup create new worklog
+const createNewWorklog = document.querySelector('.create-new-worklog')
+createNewWorklog.addEventListener('click', () => {
+    const popupWorklogWrapper = document.querySelector('.popup-worklog-wrapper')
+    popupWorklogWrapper.style.display = 'flex'
+}
+)
+// end open popup create new worklog
+
+// start cancel popup create new worklog
+const popupWorklogCancel = document.querySelector('.popup-worklog_cancel')
+popupWorklogCancel.addEventListener('click', () => {
+    const popupWorklogWrapper = document.querySelector('.popup-worklog-wrapper')
+    popupWorklogWrapper.style.display = 'none'
+}
+)
+// end  cancel popup create new worklog
+
+// start toogle between pages All and Favorites
+const topButtonsFavorites = document.querySelector('.top-buttons-favorites')
+const topButtonsAll = document.querySelector('.top-buttons-all')
+
+topButtonsFavorites.addEventListener('click', () => {
+    
+    topButtonsFavorites.style.background = '#d0d5d8'
+    topButtonsAll.style.background = '#F9FAFC'
+
+    const issueSection = document.querySelectorAll('.issueSection')
+    issueSection.forEach(item => item.style.display = 'none')
+    
+    // show favoritIssueSection
+    const favoritIssueSection = document.querySelector('.favorit-issue-section')
+    favoritIssueSection.style.display="flex"
+}
+)
+
+topButtonsAll.addEventListener('click', () => {
+    topButtonsAll.style.background = '#d0d5d8'
+    topButtonsFavorites.style.background = '#F9FAFC'
+
+    const issueSection = document.querySelectorAll('.issueSection')
+    issueSection.forEach(item => item.style.display = 'flex')
+
+    // hide favoritIssueSection
+    const favoritIssueSection = document.querySelector('.favorit-issue-section')
+    favoritIssueSection.style.display="none"
+
+}
+)
+// end toogle between pages All and Favorites
+
+// start create favorit issue 
+const favoritIssueAddBtn = document.querySelector('.favorit-issue_add-btn')
+favoritIssueAddBtn.addEventListener('click', () => { 
+
+    const popupWorklogWrapper = document.querySelector('.popup-worklog-wrapper')
+    popupWorklogWrapper.style.display = 'flex'
+}
+)
+// end create favorit issue 
