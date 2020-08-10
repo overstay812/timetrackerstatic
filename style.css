@@ -402,18 +402,16 @@ button {
 }
 .create-new-worklog_title {
   font-size: 18px;
-  color: #C4CACB;
+  color: #c4cacb;
   text-transform: uppercase;
-  
 }
 .new-worklog-wrapper {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
-.new-worklog_title{
+.new-worklog_title {
   margin-top: 56px;
   font-size: 20px;
 }
@@ -553,4 +551,131 @@ button {
 .card-issue-time {
   margin-top: 11px;
   font-size: 20px;
+}
+
+.popup-worklog-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.2);
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
+.popup-worklog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 660px;
+  height: 470px;
+}
+.popup-worklog_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #f8f8f8;
+  box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+  border-radius: 10px 10px 0px 0px;
+
+}
+.popup-worklog_header_title {
+  margin-left: 56px;
+  color: #1E1E1E;
+  font-size: 18px;
+}
+.popup-worklog_main {
+  /* border: 1px solid red; */
+  width: 545px;
+ 
+}
+.popup-worklog-range {
+  margin-top: 49px;
+  width: 100%;
+}
+.popup-worklog_name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 73px;
+  
+}
+.popup-worklog_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 22px;
+  
+}
+.popup-worklog_name_label {
+  color: #4F4F4F;
+  font-size: 10px;
+}
+.popup-worklog_name_input {
+   margin-top: 6px;
+   border: none;
+   border-bottom: 1px solid #E9ECF2;
+   width: 100%;
+   color: #C4CACB;
+   font-size: 12px;
+   padding-bottom: 14px;
+}
+.popup-worklog_name_label {
+  color: #4F4F4F;
+  font-size: 10px;
+}
+.popup-worklog_name_input {
+   margin-top: 6px;
+   border: none;
+   border-bottom: 1px solid #E9ECF2;
+   width: 100%;
+   color: #C4CACB;
+   font-size: 12px;
+   padding-bottom: 14px;
+   outline: none;
+}
+.popup-worklog_info_label {
+  color: #4F4F4F;
+  font-size: 10px;
+}
+.popup-worklog_info_input {
+   margin-top: 6px;
+   border: none;
+   border-bottom: 1px solid #E9ECF2;
+   width: 100%;
+   color: #C4CACB;
+   font-size: 12px;
+   padding-bottom: 14px;
+   outline: none;
+   
+}
+.popup-worklog_apply {
+  width: 45px;
+  height: 45px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 15px rgba(148, 156, 160, 0.13);
+  border: none;
+  border-radius: 50%; margin-right: 27px;
+}
+.popup-worklog_cancel {
+  width: 45px;
+  height: 45px;
+  background: #F9FAFC;
+  border: none;
+  border-radius: 50%;
+}
+.popup-worklog_footer {
+  margin-top: 44px;
+  margin-top: 46px;
 }

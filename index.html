@@ -506,24 +506,26 @@
             <div class="popup-worklog-wrapper">
                 <div class="popup-worklog">
                     <div class="popup-worklog_header">
-                        <span>New worklog</span>
+                        <span class="popup-worklog_header_title">New worklog</span>
                     </div>
                     <div class="popup-worklog_main">
 
-                        <div>
-                            <label for="">Worklog name</label>
-                            <input type="text" id="" placeholder="Enter the worklog name">
+                         <input class="popup-worklog-range" type="range">
+
+                        <div class="popup-worklog_name">
+                            <label class="popup-worklog_name_label" for="wrk-input-name">Worklog name</label>
+                            <input type="text" id="wrk-input-name" class="popup-worklog_name_input" placeholder="Enter the worklog name">
                         </div>
 
-                        <div>
-                            <label for="">Issue</label>
-                            <input type="text" id="" placeholder="Enter the issue name ">
+                        <div class="popup-worklog_info">
+                            <label class="popup-worklog_info_label" for="wrk-input-info">Issue</label>
+                            <input type="text" id="wrk-input-info"  class="popup-worklog_info_input"placeholder="Enter the issue name ">
                         </div>
 
                     </div>
                     <div class="popup-worklog_footer">
-                        <button><img src="" alt=""></button>
-                        <button><img src="" alt=""></button>
+                        <button class="popup-worklog_apply"><img src="source//Vector (Stroke).svg" alt=""></button>
+                        <button class="popup-worklog_cancel"><img src="source/x.svg" alt=""></button>
                     </div>
                 </div>
             </div>
