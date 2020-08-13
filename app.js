@@ -79,7 +79,7 @@ issueWrapper.forEach(item => {
             // create links inside this menu
             const jiraLink = document.createElement('a')
             jiraLink.classList = 'issue_dropdownMenu_link'
-            jiraLink.innerText = 'JIRA'
+            jiraLink.innerText = 'Jira link'
             jiraLink.href = ''
             dropdownMenu.appendChild(jiraLink)
 
@@ -107,6 +107,11 @@ issueWrapper.forEach(item => {
                 item.style.marginTop = 18 + 'px'
                 item.style.color = '#4F4F4F'
                 item.style.textDecoration = 'none'
+                item.style.fontFamily = 'Roboto'
+                item.style.fontStyle = 'normal'
+                item.style.fontWeight = 'normal'
+                item.style.lineHeight = '144.2%'
+
             })
         }
         )
@@ -255,29 +260,34 @@ const topButtonsFavorites = document.querySelector('.top-buttons-favorites')
 const topButtonsAll = document.querySelector('.top-buttons-all')
 
 topButtonsFavorites.addEventListener('click', () => {
-    
+
     topButtonsFavorites.style.background = '#d0d5d8'
+    topButtonsFavorites.style.color = 'black'
     topButtonsAll.style.background = '#F9FAFC'
+    topButtonsAll.style.color = '#BBBBBB'
+
 
     const issueSection = document.querySelectorAll('.issueSection')
     issueSection.forEach(item => item.style.display = 'none')
-    
+
     // show favoritIssueSection
     const favoritIssueSection = document.querySelector('.favorit-issue-section')
-    favoritIssueSection.style.display="flex"
+    favoritIssueSection.style.display = "flex"
 }
 )
 
 topButtonsAll.addEventListener('click', () => {
     topButtonsAll.style.background = '#d0d5d8'
     topButtonsFavorites.style.background = '#F9FAFC'
+    topButtonsAll.style.color = 'black'
+    topButtonsFavorites.style.color = '#BBBBBB'
 
     const issueSection = document.querySelectorAll('.issueSection')
     issueSection.forEach(item => item.style.display = 'flex')
 
     // hide favoritIssueSection
     const favoritIssueSection = document.querySelector('.favorit-issue-section')
-    favoritIssueSection.style.display="none"
+    favoritIssueSection.style.display = "none"
 
 }
 )
@@ -285,10 +295,11 @@ topButtonsAll.addEventListener('click', () => {
 
 // start create favorit issue 
 const favoritIssueAddBtn = document.querySelector('.favorit-issue_add-btn')
-favoritIssueAddBtn.addEventListener('click', () => { 
+favoritIssueAddBtn.addEventListener('click', () => {
 
     const popupWorklogWrapper = document.querySelector('.popup-worklog-wrapper')
     popupWorklogWrapper.style.display = 'flex'
 }
 )
-// end create favorit issue 
+// end create favorit issue
+

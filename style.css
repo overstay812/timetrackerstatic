@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  /* font-weight: 400; */
+
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("./fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("./fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
 body {
   max-width: 0px auto;
   margin: 0px auto;
@@ -28,6 +38,12 @@ button {
   color: #ffffff;
   text-decoration: none;
   margin-right: 45px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144.2%;
 }
 .active-nav {
   border-bottom: 3px solid #ffffff;
@@ -92,6 +108,12 @@ button {
   width: 334px;
 }
 .calendar_current-month {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
   color: #000000;
 }
 .top-buttons_calendar_column {
@@ -109,8 +131,21 @@ button {
   width: 44px;
   height: 44px;
 }
+.calendar-count_common-style {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
 .calendar-weekdays {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
   color: #999999;
+  text-transform: uppercase;
 }
 .calendar-gray {
   color: #cccccc;
@@ -166,7 +201,11 @@ button {
   background: #e34040;
 }
 .calendar-discription-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 11px;
+  line-height: 13px;
   color: #898989;
 }
 .top-buttons-wrapper {
@@ -177,18 +216,36 @@ button {
   border: none;
   background: #d0d5d8;
   border-radius: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 144.2%;
+  font-variant: small-caps;
 }
 .top-buttons-all {
   padding: 16px 32px;
   border: none;
   background: #d0d5d8;
   border-radius: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144.2%;
 }
 .top-buttons-favorites {
   padding: 16px 32px;
   border: none;
   background: #f9fafc;
   border-radius: 30px;
+  color: #bbbbbb;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144.2%;
 }
 .calendar-icon {
   margin-left: 18px;
@@ -203,6 +260,11 @@ button {
 }
 .day-data {
   margin-left: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  /* font-weight: bold; */
+  font-size: 24px;
+  line-height: 144.2%;
 }
 
 .favorit-issue-section {
@@ -214,7 +276,11 @@ button {
 .favorit-issue_title {
   margin-top: 50px;
   color: #1e1e1e;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
+  line-height: 144.2%;
 }
 .favorit-issue_add-btn {
   width: 66px;
@@ -228,7 +294,12 @@ button {
 .favorit-issue_btn-title {
   margin-top: 22px;
   color: #c4cacb;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 144.2%;
+  font-variant: small-caps;
   text-transform: uppercase;
 }
 .favorit-issue_btn-wrapper {
@@ -247,7 +318,11 @@ button {
 }
 .full-time-progress-time {
   display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
+  line-height: 144.2%;
   color: #bbbbbb;
 }
 .full-time-progress-meter {
@@ -294,7 +369,7 @@ button {
   width: 610px;
   height: 76px;
   border-left: 3.25px solid #e34040;
-  margin-left: 28px;
+  margin-left: 0px;
   padding-left: 27px;
 }
 .border-color-green {
@@ -304,11 +379,21 @@ button {
   border-color: #ffcc40;
 }
 .issue-info-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 144.2%;
+
+  font-variant: small-caps;
   color: #828282;
 }
 .issue-info-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 144.2%;
 }
 
 .issue-info-margin-right {
@@ -316,9 +401,20 @@ button {
 }
 .issue-time-begin {
   margin-left: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144.2%;
 }
 .issue-time-finish {
   color: #bbbbbb;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 144.2%;
+  margin-right: 12px;
 }
 
 .issue-meter {
@@ -329,7 +425,11 @@ button {
 .issue-spend-time {
   color: #bbbbbb;
   margin-left: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 18px;
+  line-height: 144.2%;
 }
 .issue-btn {
   display: flex;
@@ -353,6 +453,14 @@ button {
   margin-left: 36px;
   color: #4f4f4f;
   box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 144.2%;
+  text-align: center;
+  font-variant: small-caps;
 }
 .full-timebar {
   display: flex;
@@ -382,7 +490,7 @@ button {
   height: 19px;
   left: 366px;
   background: rgba(71, 208, 235, 0.2);
-  border: 1px dashed #47D0EB;
+  border: 1px dashed #47d0eb;
   box-sizing: border-box;
   box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
   border-radius: 5px;
@@ -406,7 +514,7 @@ button {
   height: 19px;
   left: 655px;
   background: rgba(71, 208, 235, 0.2);
-  border: 1px dashed #47D0EB;
+  border: 1px dashed #47d0eb;
   box-sizing: border-box;
   box-shadow: 0px 15px 30px rgba(216, 226, 232, 0.12);
   border-radius: 5px;
@@ -419,7 +527,11 @@ button {
 }
 .full-time-line-current {
   color: #c4cacb;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
+  line-height: 144.2%;
 }
 
 .time-and-calendar-section {
@@ -436,7 +548,12 @@ button {
 }
 .time-tracking {
   margin-left: 38px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
+  line-height: 144.2%;
+  color: #1e1e1e;
 }
 .more-horizontal {
   background: none;
@@ -460,7 +577,11 @@ button {
 }
 
 .more-horizontal_dropdown-menu_link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
+  line-height: 144.2%;
   margin-top: 18px;
   color: #4f4f4f;
   text-decoration: none;
@@ -496,7 +617,12 @@ button {
   margin-bottom: 22px;
 }
 .create-new-worklog_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 144.2%;
+  font-variant: small-caps;
   color: #c4cacb;
   text-transform: uppercase;
 }
@@ -508,19 +634,36 @@ button {
 }
 .new-worklog_title {
   margin-top: 56px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 144.2%;
+  color: #000000;
 }
 .new-worklog_add-issue {
   margin-top: 14px;
   font-size: 18px;
-  color: #828282;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 144.2%;
+  font-variant: small-caps;
   background: none;
   border: none;
   text-transform: uppercase;
+  color: #828282;
 }
 .new-worklog_time {
   margin-top: 11px;
   font-size: 54px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 144.2%;
+  color: #1e1e1e;
 }
 .new-worklog-btn_wrapper {
   margin-top: 31px;
@@ -551,7 +694,12 @@ button {
 }
 .title-calendar {
   margin-left: 38px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
+  line-height: 144.2%;
+  color: #1e1e1e;
   margin-right: 25px;
 }
 .switch-calendar {
@@ -566,7 +714,7 @@ button {
 
 /* pop-up google colendar below hide with display none at this moment */
 .popup-calendar {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 343px;
   height: 138px;
@@ -640,12 +788,23 @@ button {
   margin-top: 41px;
 }
 .card-issue-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 144.2%;
+  color: #1e1e1e;
 }
 
 .card-issue-time {
   margin-top: 11px;
+  font-size: 20px;font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 144.2%;
+  color: #1E1E1E;
+  
 }
 
 .popup-worklog-wrapper {
@@ -685,7 +844,11 @@ button {
 .popup-worklog_header_title {
   margin-left: 56px;
   color: #1e1e1e;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 18px;
+  line-height: 144.2%;
 }
 .popup-worklog_main {
   /* border: 1px solid red; */
@@ -711,7 +874,11 @@ button {
 }
 .popup-worklog_name_label {
   color: #4f4f4f;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 10px;
+  line-height: 144.2%;
 }
 .popup-worklog_name_input {
   margin-top: 6px;
@@ -719,7 +886,11 @@ button {
   border-bottom: 1px solid #e9ecf2;
   width: 100%;
   color: #c4cacb;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
+  line-height: 144.2%;
   padding-bottom: 14px;
 }
 .popup-worklog_name_label {
@@ -738,7 +909,11 @@ button {
 }
 .popup-worklog_info_label {
   color: #4f4f4f;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 10px;
+  line-height: 144.2%;
 }
 .popup-worklog_info_input {
   margin-top: 6px;
@@ -746,7 +921,11 @@ button {
   border-bottom: 1px solid #e9ecf2;
   width: 100%;
   color: #c4cacb;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
+  line-height: 144.2%;
   padding-bottom: 14px;
   outline: none;
 }
