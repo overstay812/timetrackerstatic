@@ -28,6 +28,7 @@ const issueWrapper = document.querySelectorAll('.issue-wrapper')
 issueWrapper.forEach(item => {
     item.addEventListener('click', event => {
 
+
         let menuButtonIssue = document.createElement('div')
         menuButtonIssue.style.display = "flex"
         menuButtonIssue.style.flexDirection = "row"
@@ -78,7 +79,7 @@ issueWrapper.forEach(item => {
             // create links inside this menu
             const jiraLink = document.createElement('a')
             jiraLink.classList = 'issue_dropdownMenu_link'
-            jiraLink.innerText = 'JIRA'
+            jiraLink.innerText = 'Jira link'
             jiraLink.href = ''
             dropdownMenu.appendChild(jiraLink)
 
@@ -106,6 +107,11 @@ issueWrapper.forEach(item => {
                 item.style.marginTop = 18 + 'px'
                 item.style.color = '#4F4F4F'
                 item.style.textDecoration = 'none'
+                item.style.fontFamily = 'Roboto'
+                item.style.fontStyle = 'normal'
+                item.style.fontWeight = 'normal'
+                item.style.lineHeight = '144.2%'
+
             })
         }
         )
@@ -256,7 +262,10 @@ const topButtonsAll = document.querySelector('.top-buttons-all')
 topButtonsFavorites.addEventListener('click', () => {
 
     topButtonsFavorites.style.background = '#d0d5d8'
+    topButtonsFavorites.style.color = 'black'
     topButtonsAll.style.background = '#F9FAFC'
+    topButtonsAll.style.color = '#BBBBBB'
+
 
     const issueSection = document.querySelectorAll('.issueSection')
     issueSection.forEach(item => item.style.display = 'none')
@@ -270,6 +279,8 @@ topButtonsFavorites.addEventListener('click', () => {
 topButtonsAll.addEventListener('click', () => {
     topButtonsAll.style.background = '#d0d5d8'
     topButtonsFavorites.style.background = '#F9FAFC'
+    topButtonsAll.style.color = 'black'
+    topButtonsFavorites.style.color = '#BBBBBB'
 
     const issueSection = document.querySelectorAll('.issueSection')
     issueSection.forEach(item => item.style.display = 'flex')
@@ -291,3 +302,4 @@ favoritIssueAddBtn.addEventListener('click', () => {
 }
 )
 // end create favorit issue
+
