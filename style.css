@@ -352,6 +352,7 @@ button {
   padding-bottom: 5px;
   padding-right: 51;
   z-index: 2;
+  width: 100%;
 }
 .issue-wrapper {
   position: relative;
